@@ -1,0 +1,208 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - HNG Stage 1</title>
+
+    <!-- favicon added -->
+    <link rel="shortcut icon" href="/assets/icon.jpg" type="image/x-icon" />
+
+    <!-- Google font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link css -->
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7c5b46bc02.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my js -->
+    <script src="/js/index.js" defer></script>
+  </head>
+  <body>
+    <div id="modal"></div>
+    <nav>
+      <div class="name"><h1>Michael Ubek</h1></div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#slack"> My Slack Details</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#hng">HNG Links</a></li>
+      </ul>
+      <i
+        class="fa-solid fa-bars fa-xl"
+        style="color: #ffffff"
+        id="hamburger"
+      ></i>
+    </nav>
+    <div id="nav2">
+      <div class="icon">
+        <img src="/assets/138-512.webp" alt="close icon" id="close" />
+      </div>
+      <ul>
+        <li class="navLinks"><a href="#home">Home</a></li>
+        <li class="navLinks"><a href="#slack"> My Slack Details</a></li>
+        <li class="navLinks"><a href="#goals">Goals</a></li>
+        <li class="navLinks"><a href="#hng">HNG Links</a></li>
+      </ul>
+    </div>
+    <div class="hero" id="home">
+      <div class="box grid-section1"></div>
+      <div class="box grid-section2"></div>
+      <div class="box grid-section3"></div>
+      <div class="box grid-section4">
+        <div class="text-box">
+          <h2>Michael</h2>
+          <p>FRONTEND DEVELOPER | UYO</p>
+        </div>
+      </div>
+    </div>
+    <main id="slack">
+      <div class="image">
+        <div class="image-box" data-testid="slackProfilePicture">
+          <h3>My Slack Profile Picture</h3>
+        </div>
+      </div>
+      <div class="text">
+        <div class="details">
+          <h2>Slack Name</h2>
+          <p data-testid="slackDisplayName">Michael Ubek</p>
+        </div>
+        <div class="details">
+          <h2>Current time</h2>
+          <p data-testid="currentTimeUTC" id="time"></p>
+        </div>
+        <div class="details">
+          <h2>Current Day of the Week</h2>
+          <p data-testid="currentDay" id="day"></p>
+        </div>
+        <div class="details">
+          <h2>Slack Email</h2>
+          <p data-testid="slackEmail">ubekmichael@gmail.com</p>
+        </div>
+      </div>
+    </main>
+
+    <section id="goals">
+      <h2>My Goals for the Next Two Years</h2>
+      <div class="year">
+        <div class="year1">
+          <div class="image-box"><h3>Year One</h3></div>
+          <div class="text-box">
+            <p>
+              As a frontend web developer, I'm eager to continue growing my
+              skills and expanding my expertise in the next two years. Here are
+              my tech goals for the next 12 months:
+            </p>
+            <ul>
+              <li>
+                Master frontend development with React, JavaScript, and HTML/CSS
+              </li>
+              <li>
+                Build a personal project (e.g., a blog or a simple web app) to
+                showcase skills
+              </li>
+              <li>
+                Learn and implement popular libraries and tools (e.g., Redux,
+                Webpack, ESLint)
+              </li>
+              <li>
+                Familiarize myself with version control (Git) and Agile
+                development methodologies
+              </li>
+              <li>
+                Network with other developers through online communities and
+                attend web development events
+              </li>
+              <li>
+                Stay up-to-date with industry trends and best practices through
+                online courses and tutorials
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="year2">
+          <div class="image-box"><h3>Year Two</h3></div>
+          <div class="text-box">
+            <p>
+              As a frontend web developer, I'm eager to continue growing my
+              skills and expanding my expertise in the next two years. Here are
+              my tech goals for the year two:
+            </p>
+            <ul>
+              <li>
+                Transition into backend development with Node.js, Express, and a
+                database (e.g., MongoDB)
+              </li>
+              <li>Learn about API design, authentication, and authorization</li>
+              <li>
+                Build a full-stack project integrating frontend and backend
+                skills
+              </li>
+              <li>
+                Explore DevOps practices (e.g., containerization with Docker)
+                and cloud platforms (e.g., AWS)
+              </li>
+              <li>
+                Network with other developers through online communities and
+                attend web development events
+              </li>
+              <li>
+                Continuously improve skills in both frontend and backend
+                development
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section2" id="hng">
+      <h3>Some Pertinent Links</h3>
+      <div class="links">
+        <div class="link">
+          <div class="link-box">
+            <img
+              src="https://dixcoverhub.com.ng/wp-content/uploads/2024/06/GOr2NIUXMAAu50e-1082x1536.jpg"
+              alt="HNG Flyer"
+            />
+          </div>
+          <a href="https://hng.tech/learn" target="_blank">HNG Internship</a>
+        </div>
+        <div class="link">
+          <div class="link-box">
+            <img
+              src="https://ahrefs.com/blog/wp-content/uploads/2023/03/keyword-analysis-process-1060x1536.png"
+              alt="Keyword Dog Picture"
+            />
+          </div>
+          <a href="https://keyword.dog/" target="_blank">Keyword Dog</a>
+        </div>
+        <div class="link">
+          <div class="link-box">
+            <img
+              src="https://scrapeanyweb.site/images/ai-scrapper.webp"
+              alt="Scrape any website"
+            />
+          </div>
+          <a href="https://scrapeanyweb.site/" target="_blank"
+            >Scrape any Website</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>© Copyright <b> Michael Ubek </b> <span id="year"></span></p>
+    </footer>
+  </body>
+</html>
